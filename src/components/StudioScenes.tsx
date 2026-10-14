@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { studioPresentationConfig } from '../config/studioPresentation';
 import { SafeImage } from './SafeImage';
 import {
@@ -812,16 +812,19 @@ export const Scene06Campaigns: React.FC = () => {
       >
         {/* Galería Editorial de las Dos Caras de la Tarjeta */}
         <div
+          className="cards-pair"
           style={{
-            display: 'grid',
-            gridTemplateRows: '1fr 1fr',
+            display: 'flex',
             gap: '16px',
-            height: '100%'
+            height: '100%',
+            minHeight: 0
           }}
         >
           <div
             className="glass-panel"
             style={{
+              flex: 1,
+              minWidth: 0,
               borderRadius: '14px',
               overflow: 'hidden',
               padding: '12px',
@@ -840,6 +843,8 @@ export const Scene06Campaigns: React.FC = () => {
           <div
             className="glass-panel"
             style={{
+              flex: 1,
+              minWidth: 0,
               borderRadius: '14px',
               overflow: 'hidden',
               padding: '12px',

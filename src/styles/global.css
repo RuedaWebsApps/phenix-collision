@@ -215,6 +215,11 @@ video {
   main section h1 {
     font-size: clamp(2rem, 8vw, 3rem) !important;
   }
+
+  .cards-pair {
+    height: auto !important;
+    min-height: 32vh;
+  }
 }
 
 @media (max-width: 560px) {
