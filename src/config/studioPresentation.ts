@@ -1,4 +1,4 @@
-export interface RealAssetsManifest {
+﻿export interface RealAssetsManifest {
   heroCar: string;
   webDesign: string;
   wrap1: string;
@@ -117,15 +117,15 @@ export const studioPresentationConfig: StudioPresentationConfig = {
     whatsappMessage: "Hola, estuve viendo la presentación comercial interactiva para Phenix Collision y me gustaría coordinar los siguientes pasos de la propuesta."
   },
   assets: {
-    heroCar: "/assets/phenix/imagen-carro.jpg",
-    webDesign: "/assets/phenix/imegen-web.jpg",
-    wrap1: "/assets/phenix/wrap-1.jpg",
-    wrap2: "/assets/phenix/wrap-2.jpg",
-    poloFront: "/assets/phenix/polo-1.jpg",
-    poloBack: "/assets/phenix/polo-2.jpg",
-    cap: "/assets/phenix/mockup-gorra.jpg",
-    card1: "/assets/phenix/card-1.jpeg",
-    card2: "/assets/phenix/card-2.jpeg",
+    heroCar: "/assets/phenix/imagen-carro.webp",
+    webDesign: "/assets/phenix/imegen-web.webp",
+    wrap1: "/assets/phenix/wrap-1.webp",
+    wrap2: "/assets/phenix/wrap-2.webp",
+    poloFront: "/assets/phenix/polo-1.webp",
+    poloBack: "/assets/phenix/polo-2.webp",
+    cap: "/assets/phenix/mockup-gorra.webp",
+    card1: "/assets/phenix/card-1.webp",
+    card2: "/assets/phenix/card-2.webp",
     videoShowcase: "/assets/phenix/video-1.mp4",
     videoRepair: "/assets/phenix/repari-car.mp4"
   },
@@ -222,7 +222,7 @@ export const studioPresentationConfig: StudioPresentationConfig = {
     wrap: {
       tag: "03 · Wrap Automotriz",
       headline: "Identidad en Movimiento de Alto Impacto",
-      subheadline: "Aplicación visual plana real diseñada sobre las líneas originales del vehículo. Visibilidad inmediata a velocidad de tráfico.",
+      subheadline: "Propuesta visual diseñada sobre las líneas originales del vehículo. Visibilidad inmediata a velocidad de tráfico.",
       bullets: [
         "Líneas de tensión geométrica que acompañan la aerodinámica de la carrocería.",
         "Contraste tonal equilibrado para lectura limpia de marca y servicios.",
@@ -242,32 +242,32 @@ export const studioPresentationConfig: StudioPresentationConfig = {
     merchandise: {
       tag: "05 · La Marca en el Producto",
       headline: "Indumentaria y Prendas con Identidad Propia",
-      subheadline: "Fotografías reales del producto final: gorras estructuradas y polos de algodón premium con diseño en pecho y espalda.",
+      subheadline: "Propuesta visual de gorras y polos con la identidad aplicada en pecho, espalda y frente.",
       items: [
         {
           id: "polo-front",
           title: "Polo Corporativo · Frontal",
           subtitle: "Isotipo limpio en pecho izquierdo",
-          image: "/assets/phenix/polo-1.jpg"
+          image: "/assets/phenix/polo-1.webp"
         },
         {
           id: "polo-back",
           title: "Polo Corporativo · Espalda",
           subtitle: "Diseño gráfico dorsal de gran formato",
-          image: "/assets/phenix/polo-2.jpg"
+          image: "/assets/phenix/polo-2.webp"
         },
         {
           id: "cap",
           title: "Gorra Snapback Estructurada",
           subtitle: "Aplicación frontal en relieve de alta densidad",
-          image: "/assets/phenix/mockup-gorra.jpg"
+          image: "/assets/phenix/mockup-gorra.webp"
         }
       ]
     },
     campaigns: {
       tag: "06 · Publicidad y Campañas",
       headline: "Papelería de Alto Nivel y Piezas Comerciales",
-      subheadline: "Diseños planos reales de tarjetas comerciales con acabados de contraste y equilibrio tipográfico.",
+      subheadline: "Diseño de tarjetas comerciales con contraste y equilibrio tipográfico.",
       bullets: [
         "Tarjetas corporativas diseñadas para dejar una primera impresión impecable.",
         "Uso selectivo del color de acento y tipografía técnica de fácil lectura.",
@@ -287,3 +287,4 @@ export const studioPresentationConfig: StudioPresentationConfig = {
     }
   }
 };
+

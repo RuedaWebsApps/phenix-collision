@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { studioPresentationConfig } from '../config/studioPresentation';
 import { SafeImage } from './SafeImage';
 import {
@@ -232,7 +232,7 @@ export const Scene03Web: React.FC = () => {
           </h2>
         </div>
         <span style={{ fontSize: '0.78rem', color: '#94A3B8' }}>
-          [Arte digital plano real · Sin renders ficticios]
+          
         </span>
       </div>
 
@@ -273,7 +273,7 @@ export const Scene03Web: React.FC = () => {
             <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#F59E0B' }} />
             <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#10B981' }} />
             <span style={{ fontSize: '0.72rem', color: '#64748B', marginLeft: '12px' }}>
-              https://phenixcollision.com
+              Propuesta de sitio web
             </span>
           </div>
 
@@ -343,7 +343,7 @@ export const Scene03Web: React.FC = () => {
               color: '#F1F5F9'
             }}
           >
-            ⚡ <strong>Despliegue de Alto Rendimiento:</strong> Arquitectura moderna con carga instantánea y optimización total para dispositivos móviles.
+            <strong>Enfoque:</strong> Diseño adaptable a móvil y escritorio, con acceso directo a cotización y contacto.
           </div>
         </div>
       </div>
@@ -499,7 +499,7 @@ export const Scene03Wrap: React.FC = () => {
               color: '#94A3B8'
             }}
           >
-            📐 <strong>Precisión Técnica:</strong> Diseños adaptados al milímetro sobre plantilla vectorial del vehículo para evitar cortes sobre manijas, molduras o áreas críticas.
+            <strong>Precisión:</strong> El diseño se ajusta a las medidas reales del vehículo antes de producción.
           </div>
         </div>
       </div>
@@ -568,6 +568,8 @@ export const Scene04Motion: React.FC = () => {
         >
           <video
             src={videoShowcase}
+            preload="metadata"
+            aria-label="Video de presentación Phenix Collision"
             autoPlay
             loop
             muted
@@ -618,7 +620,7 @@ export const Scene04Motion: React.FC = () => {
               color: '#F8FAFC'
             }}
           >
-            🎬 <strong>Dirección de Motion:</strong> Animaciones aceleradas por hardware para garantizar 60 fps estables en tabletas y pantallas de presentación.
+            <strong>Movimiento:</strong> Piezas en video para redes sociales, web y pantallas del taller.
           </div>
         </div>
       </div>
@@ -673,7 +675,7 @@ export const Scene05Merchandise: React.FC = () => {
           minHeight: 0
         }}
       >
-        {/* Visor de Fotografía Real de Producto */}
+        {/* Visor de Propuesta de Producto */}
         <div
           className="glass-panel"
           style={{
@@ -735,7 +737,7 @@ export const Scene05Merchandise: React.FC = () => {
                   {item.title}
                 </span>
                 <span style={{ fontSize: '0.72rem', color: '#E05A2B', fontWeight: 600 }}>
-                  Fotografía Real
+                  Propuesta
                 </span>
               </div>
               <p style={{ fontSize: '0.82rem', color: '#94A3B8', marginTop: '6px' }}>
@@ -755,7 +757,7 @@ export const Scene05Merchandise: React.FC = () => {
               lineHeight: 1.5
             }}
           >
-            ✨ <strong>Calidad de Confección:</strong> Fotografías de prendas reales confeccionadas para Phenix Collision. Telas de alta resistencia al lavado y estampados elásticos de larga vida útil.
+            <strong>Nota:</strong> Simulaciones visuales de la propuesta. Técnica de aplicación, prendas y colores se definen con el cliente.
           </div>
         </div>
       </div>
@@ -893,7 +895,7 @@ export const Scene06Campaigns: React.FC = () => {
               color: '#94A3B8'
             }}
           >
-            📑 <strong>Papelería Comercial:</strong> Archivos exportados en perfil de color CMYK con sangrías y marcas de corte para producción inmediata en imprenta de alto calibre.
+            <strong>Entrega:</strong> Archivos finales preparados para imprenta una vez aprobado el diseño.
           </div>
         </div>
       </div>
@@ -1183,6 +1185,8 @@ export const Scene08Closing: React.FC<SceneProps> = ({ onGoTo }) => {
         >
           <video
             src={videoRepair}
+            preload="metadata"
+            aria-label="Video de presentación Phenix Collision"
             autoPlay
             loop
             muted
@@ -1233,3 +1237,6 @@ export const Scene08Closing: React.FC<SceneProps> = ({ onGoTo }) => {
     </section>
   );
 };
+
+
+

@@ -53,6 +53,9 @@ export const App: React.FC = () => {
   // Atajos de Teclado
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (e.key === ' ' && (tag === 'BUTTON' || tag === 'VIDEO')) return;
+      if (e.key === ' ') e.preventDefault();
       if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
         nextSlide();
       } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
