@@ -3,7 +3,6 @@ import { studioPresentationConfig } from '../config/studioPresentation';
 import { SafeImage } from './SafeImage';
 import {
   ArrowRight,
-  MessageSquare,
   RotateCcw,
   Check
 } from 'lucide-react';
@@ -1104,13 +1103,8 @@ export const Scene07Ecosystem: React.FC = () => {
    ========================================================================= */
 export const Scene08Closing: React.FC<SceneProps> = ({ onGoTo }) => {
   const { closing } = studioPresentationConfig.scenes;
-  const { advisor, client, studio } = studioPresentationConfig;
-
-  const handleWhatsApp = () => {
-    const cleanNumber = advisor.whatsappNumber.replace(/[^0-9]/g, '');
-    const encodedMessage = encodeURIComponent(advisor.whatsappMessage);
-    window.open(`https://wa.me/${cleanNumber}?text=${encodedMessage}`, '_blank');
-  };
+  const { client, studio, assets } = studioPresentationConfig;
+  const { videoRepair } = assets;
 
   return (
     <section
@@ -1171,28 +1165,41 @@ export const Scene08Closing: React.FC<SceneProps> = ({ onGoTo }) => {
           {closing.subheadline}
         </p>
 
-        <div style={{ marginTop: '32px' }}>
-          <button
-            onClick={handleWhatsApp}
-            className="btn-primary"
+        {/* Video Showcase de Cierre */}
+        <div
+          className="glass-panel"
+          style={{
+            marginTop: '28px',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            backgroundColor: '#000000',
+            border: '1px solid rgba(224, 90, 43, 0.25)',
+            maxHeight: '340px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.6)'
+          }}
+        >
+          <video
+            src={videoRepair}
+            autoPlay
+            loop
+            muted
+            playsInline
             style={{
-              fontSize: '1.05rem',
-              padding: '16px 36px',
-              backgroundColor: '#25D366',
-              boxShadow: '0 4px 20px rgba(37, 211, 102, 0.35)',
-              marginInline: 'auto'
+              width: '100%',
+              maxHeight: '340px',
+              objectFit: 'contain'
             }}
-          >
-            <MessageSquare size={20} />
-            <span>{closing.ctaText}</span>
-          </button>
+          />
         </div>
 
         <div
           className="glass-panel"
           style={{
-            marginTop: '40px',
-            padding: '20px 28px',
+            marginTop: '24px',
+            padding: '16px 28px',
             borderRadius: '16px',
             backgroundColor: 'rgba(18, 21, 28, 0.85)',
             display: 'flex',

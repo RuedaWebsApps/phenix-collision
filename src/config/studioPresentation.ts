@@ -9,6 +9,7 @@ export interface RealAssetsManifest {
   card1: string;
   card2: string;
   videoShowcase: string;
+  videoRepair: string;
 }
 
 export interface ClientServiceCategory {
@@ -125,7 +126,8 @@ export const studioPresentationConfig: StudioPresentationConfig = {
     cap: "/assets/phenix/mockup-gorra.jpg",
     card1: "/assets/phenix/card-1.jpeg",
     card2: "/assets/phenix/card-2.jpeg",
-    videoShowcase: "/assets/phenix/video-1.mp4"
+    videoShowcase: "/assets/phenix/video-1.mp4",
+    videoRepair: "/assets/phenix/repari-car.mp4"
   },
   serviceCategories: [
     {
